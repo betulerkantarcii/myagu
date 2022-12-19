@@ -1,0 +1,11 @@
+import './admin-user';
+import './profile-edit-profile';
+import './profile-edit-password';
+import './announcement';
+import './calendar';
+import './poll';
+import './communicate';
+import './manage-course';
+import './solve';
+import './academics-administration';
+import './cafeteria-menu';

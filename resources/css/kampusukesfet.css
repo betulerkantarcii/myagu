@@ -1,0 +1,200 @@
+﻿.blok-kampus{padding-top:30px; padding-bottom:30px;}
+
+
+.kampusu-kesfet-baslik{
+    background-color:#D1232A;
+    overflow:hidden;
+    height:80px;
+    margin: 50px auto 30px auto;
+    width:90%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+
+.kampusu-kesfet-baslik h2{
+    color:#ffffff;
+    font-size:40px;
+    font-weight:500;
+    font-family: 'Dosis', sans-serif;
+    line-height:30px;
+    padding:20px 0px 25px 0px;
+    text-align:center;
+}
+
+
+.kampus-baslik{
+    padding:60px 0px;
+    text-align: center;
+}
+
+
+.kampus-baslik h3{
+    font-size:29px;
+    font-weight:700;
+    line-height:25px;
+    color:#000000;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+.center-image {
+  overflow: hidden;
+  position: relative;
+  width:100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section_hu_mobile{
+  display: none;
+  height: 1px;
+}
+
+.section_hu{
+  width: 100%;
+  min-height: 500px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 55% auto;
+  margin-bottom: 50px;
+  -webkit-transform: translate3d(0,0,0);
+  position: relative;
+}
+
+.section_div{
+  background-color: white;
+  border: 2px;
+  border-style: outset;
+  color: #000;
+  padding: 40px;
+  width: 60%;
+  min-height: 350px;
+  font-size: 1em;
+}
+.sec_baslik{
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.sec_alt_baslik{
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+.sec_bilgi{
+  font-size: 1em;
+ 
+}
+
+.section_egitim{
+  background-image: url("../images/kampus-kesfet/sınıflar/_DSC5816.jpg");
+}
+.section_arastirma{
+  background-image: url("../images/kampus-kesfet/kütüphane/Kutuphane-1.jpg");
+}
+.section_inovasyon{
+  background-image: url("../images/kampus-kesfet/Model-Fabrika/2D6A4266.jpg");
+}
+
+.section_saglik{
+  background-image: url("../images/kampus-kesfet/yurt/_KU_9208.jpg");
+}
+
+.section_uluslararasi{
+  background-image: url("../images/kampus-kesfet/cafe/2D6A8638.jpg");
+}
+
+.section_yerleske{
+  background-image: url("../images/kampus-kesfet/ortak-alan/2D6A2415.jpg");
+}
+.section_hakkimizda{
+  background-image: url("../images/kampus-kesfet/Muze/2D6A1595.jpg");
+}
+.section_fitness{
+  background-image: url("../images/kampus-kesfet/Fitness/Fitness-Center-3.jpg");
+}
+.section_sporalanlari{
+  background-image: url("../images/kampus-kesfet/spor-alanları/Spor-alanları-Masa-Tenisi.jpg");
+}
+
+
+.stat2{
+  text-align: center;
+
+}
+.stat2_sayi{
+  font-weight: 900;
+  font-size: 2.3em;
+}
+.stat2_yazi{
+  font-size:1em;
+
+}
+.stat2_border{
+  border-right: 4px solid;
+}
+
+
+a.devam_link{
+  font-weight: bold;
+}
+a.devam_link:hover{
+  color: rgba(0,0,0,0.7);
+}
+
+@media (min-width: 1024px) {
+  .section_hu{
+    min-height: 580px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .section_hu{
+    background-size: 75% auto;
+    min-height: 450px;
+  }
+  .section_div{
+    padding: 20px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .section_hu{
+    background-size: 75% auto;
+    min-height: 50px;
+    background-image: none !important;
+  }
+  .section_hu_mobile{
+    display: block;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+  }
+  .section_div{
+    padding: 20px;
+    width: 100%;
+    font-size: 0.9em;
+    min-height: 350px;
+  }
+  .stat2_sayi{
+    font-size: 1.8em;
+  }
+  .stat2_yazi{
+    font-size:0.9em;
+
+  }
+}
+
+
+
+
+
+
+
+
+
