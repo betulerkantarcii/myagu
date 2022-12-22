@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '151f1c6bb519b2c92f0ff73a14d1e8a7a92c3a35',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -539,12 +539,12 @@
             'dev_requirement' => true,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '151f1c6bb519b2c92f0ff73a14d1e8a7a92c3a35',
             'dev_requirement' => false,
         ),
         'laravel/legacy-factories' => array(
