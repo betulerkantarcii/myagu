@@ -3,7 +3,7 @@
         <ul class="nav">
             <li class="nav-title">{{ trans('brackets/admin-ui::admin.sidebar.content') }}</li>
             <li class="nav-item"><a class="nav-link" href="{{ url('admin/announcements') }}"><i class="nav-icon icon-drop"></i> {{ trans('admin.announcement.title') }}</a></li>
-           <li class="nav-item"><a class="nav-link" href="{{ url('admin/calendars') }}"><i class="nav-icon icon-star"></i> {{ trans('admin.calendar.title') }}</a></li>
+           <!-- <li class="nav-item"><a class="nav-link" href="{{ url('admin/calendars') }}"><i class="nav-icon icon-star"></i> {{ trans('admin.calendar.title') }}</a></li> -->
            <li class="nav-item"><a class="nav-link" href="{{ url('admin/polls') }}"><i class="nav-icon icon-compass"></i> {{ trans('admin.poll.title') }}</a></li>
            <li class="nav-item"><a class="nav-link" href="{{ url('admin/communicates') }}"><i class="nav-icon icon-ghost"></i> {{ trans('admin.communicate.title') }}</a></li>
            <li class="nav-item"><a class="nav-link" href="{{ url('admin/manage-courses') }}"><i class="nav-icon icon-graduation"></i> {{ trans('admin.manage-course.title') }}</a></li>
