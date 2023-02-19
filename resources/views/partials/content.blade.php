@@ -33,7 +33,7 @@
                                     <img src="images/myagu/2.png"  class="img-mobile-temp3" alt="twbs" >
                                     <div class="d-flex gap-2 w-100 justify-content-between">
                                         <div class="temp3-align">
-                                        <p class="mb-0 opacity-75">{{ trans('public.home.poll') }}</p>
+                                        <h2 class="mb-0 opacity-75">{{ trans('public.home.poll') }}</h2>
                                     </div>
                                     </div>
                                 </button>
@@ -47,36 +47,28 @@
                                     <img src="images/myagu/2.png"  class="img-mobile-temp3" alt="twbs" >
                                     <div class="d-flex gap-2 w-100 justify-content-between">
                                       <div class="temp3-align">
-                                        <p class="mb-0 opacity-75">{{ trans('public.home.CafeteriaMenu') }}</p>
+                                        <h2 class="mb-0 opacity-75">{{ trans('public.home.CafeteriaMenu') }}</h2>
                                       </div>
                                     </div>
                                   </a>
 
                                 </div>
                             </div>
-                            <!--
+
                             <div class="row" style="padding-top:28px">
                                 <div class="col">
                                      <button type="button" class="list-group-item list-group-item-action d-flex gap-3 py-3" data-toggle="modal" data-target="#calendarModal">
-                                        <img src="images/myagu/3.png"  class="img-mobile-temp3" alt="twbs" >
                                         <div class="d-flex gap-2 w-100 justify-content-between">
                                           <div class="temp3-align">
-                                            <p class="mb-0 opacity-75">{{ trans('public.home.calendar') }}</p>
+                                            <h2 class="mb-0 opacity-75">{{ trans('public.home.calendar') }}</h2>
                                             <div class="scroll-in-calendar">
-                                                <div style="text-align: left;">
-                                                    @if($dataCalendar != null)
-                                                    @for($i=0; $i < count($dataCalendar); $i++)
-                                                        <p>{{ $dataCalendar[$i]->title }}</p>
-                                                    @endfor
-                                                    @endif
-                                                </div>
+                                            <embed type="text/html" src="https://posta.agu.edu.tr/home/betul.erkantarci@agu.edu.tr/Calendar.html" width="600" height="600">
                                             </div>
                                           </div>
                                         </div>
                                     </button>
                               </div>
                             </div>
-                            -->
 
                             <div class="row" style="padding-top:28px">
                             </div>
@@ -86,7 +78,7 @@
 
             </div>
         </div>
-
+                                          
 
         <div class="desktop-gizle">
 
@@ -134,29 +126,20 @@
                         </div>
                     </div>
 
-                <!--
                 <div class="row" style="padding-top:10px">
                     <div class="col">
                         <button type="button" class="list-group-item list-group-item-action d-flex gap-3 py-3" data-toggle="modal" data-target="#calendarModal">
-                            <img src="images/myagu/3.png"  class="img-mobile-temp3" alt="twbs" >
                             <div class="d-flex gap-2 w-100 justify-content-between">
                               <div class="temp3-align">
-                                <p class="mb-0 opacity-75">{{ trans('public.home.calendar') }}</p>
+                                <h2 class="mb-0 opacity-75">{{ trans('public.home.calendar') }}</h2>
                                 <div class="scroll-in-calendar">
-                                    <div style="text-align: left;">
-                                        @if($dataCalendar != null)
-                                        @for($i=0; $i < count($dataCalendar); $i++)
-                                            <p>{{ $dataCalendar[$i]->title }}</p>
-                                        @endfor
-                                        @endif
-                                    </div>
+                                <embed class="embed-calendar" type="text/html" src="https://posta.agu.edu.tr/home/betul.erkantarci@agu.edu.tr/Calendar.html" width="350" height="600">
                                 </div>
                               </div>
                             </div>
                         </button>
                   </div>
                 </div>
-                -->
 
                 <div class="row" style="padding-top:10px">
                 </div>
@@ -264,83 +247,6 @@
 
 </div>
 <!-- Modal -->
-
-<div class="modal fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="false">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content" style="margin-top: 50px;">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">{{ trans('public.home.calendar') }}</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-                <?php
-                if(count($dataCalendar) != 0){
-                    $j=0;
-                }
-            
-                while($j < count($dataCalendar)){
-                ?>
-                    <div  class="row justify-content-around">
-                        <?php
-                        if($j+3 <= count($dataCalendar)){
-                            $last = $j+3;
-                        }
-                        else{
-                            $last = count($dataCalendar);
-                        }
-                        ?>
-                        @for($i=$j; $i< $last; $i++ )
-                            <div class="col-lg" style="padding-bottom: 20px;">
-                                <div class="list-group-item">
-                                    <div class="row">
-                                            <div class="col-lg" style="text-align: left;">
-                                                <img style="width: 40px;" src="images/myagu/3.png" alt="twbs" >
-                                            </div>
-                                            <div class="col-lg" style="text-align: right;">
-                                            @if($dataCalendar[$i]->event_time != null)
-                                                <h4>{{ $dataCalendar[$i]->event_time->format('d-m-y') }}</h4>
-                                                <p>{{ $dataCalendar[$i]->event_time->format('H:i') }}</p>
-                                                @endif
-                                            </div>
-                                    </div>
-                                    <hr style="border: 1px solid black;">
-                                    <div class="restrict" style="text-align: center;">
-                                        <h4><a href="{{ $dataCalendar[$i]->link }}"> {{ $dataCalendar[$i]->title }}</a></h4>
-                                        <p>{!! $dataCalendar[$i]->description !!}</p>
-                                    </div>
-                                    <div style="text-align: left;">
-                                        <div class="row">
-                                            <div class="col-mb">
-                                                <img style="width: 25px;" src="images/myagu/loc.png" alt="twbs" >
-                                            </div>
-                                            <br>
-                                            <div class="col-mb">
-                                                <h5>{{ $dataCalendar[$i]->event_location }}</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endfor
-                        @php
-                            $j=$j+3;
-                        @endphp
-                    </div>
-                    <?php
-                    }
-                    ?>
-            
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">{{ trans('public.home.close') }}</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
 
 

@@ -10,7 +10,7 @@
 }
 
 .temp3-align h2{
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .list-group a{
@@ -60,7 +60,7 @@
 
 
 .scroll-in{
-    max-height: 300px;
+    height:820px;
     margin-bottom: 10px;
     overflow:scroll;
     -webkit-overflow-scrolling: touch;
@@ -79,12 +79,16 @@
 
 .scroll-in-calendar{
     margin-top: 13px;
-    max-height: 100px;
+    height: 600px;
     overflow-y:auto;
     overflow-x:hidden;
     -webkit-overflow-scrolling: touch;
 }
 
+.ember-calendar{
+  width:600px;
+  height:600px;
+}
 
 .desktop-gizle {
     display: none;
@@ -96,6 +100,10 @@
     }
     .desktop-gizle {
         display: block;
+    }
+
+    .scroll-in{
+      height:300px;
     }
 }
 
