@@ -57,7 +57,7 @@
 
                             <div class="row" style="padding-top:28px">
                                 <div class="col">
-                                     <button type="button" class="list-group-item list-group-item-action d-flex gap-3 py-3" data-toggle="modal" data-target="#calendarModal">
+                                     <a href="https://posta.agu.edu.tr/home/betul.erkantarci@agu.edu.tr/Calendar.html" class="list-group-item list-group-item-action d-flex gap-3 py-3">
                                         <div class="d-flex gap-2 w-100 justify-content-between">
                                           <div class="temp3-align">
                                             <h2 class="mb-0 opacity-75">{{ trans('public.home.calendar') }}</h2>
@@ -66,7 +66,7 @@
                                             </div>
                                           </div>
                                         </div>
-                                    </button>
+                                      </a>
                               </div>
                             </div>
 
@@ -128,7 +128,7 @@
 
                 <div class="row" style="padding-top:10px">
                     <div class="col">
-                        <button type="button" class="list-group-item list-group-item-action d-flex gap-3 py-3" data-toggle="modal" data-target="#calendarModal">
+                        <a href="https://posta.agu.edu.tr/home/betul.erkantarci@agu.edu.tr/Calendar.html" class="list-group-item list-group-item-action d-flex gap-3 py-3">
                             <div class="d-flex gap-2 w-100 justify-content-between">
                               <div class="temp3-align">
                                 <h2 class="mb-0 opacity-75">{{ trans('public.home.calendar') }}</h2>
@@ -137,7 +137,7 @@
                                 </div>
                               </div>
                             </div>
-                        </button>
+                        </a>
                   </div>
                 </div>
 
