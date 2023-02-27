@@ -211,37 +211,7 @@ INSERT INTO `cafeteria_menu` VALUES (4,'{\"en\": \"xyz\"}',NULL,1,'2022-12-17 11
 /*!40000 ALTER TABLE `cafeteria_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
---
--- Table structure for table `calendar`
---
 
-DROP TABLE IF EXISTS `calendar`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `calendar` (
-  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
-  `title` json DEFAULT NULL,
-  `description` json DEFAULT NULL,
-  `event_time` datetime DEFAULT NULL,
-  `event_location` json DEFAULT NULL,
-  `link` json DEFAULT NULL,
-  `published_at` date DEFAULT NULL,
-  `enabled` tinyint(1) NOT NULL DEFAULT '1',
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `calendar`
---
-
-LOCK TABLES `calendar` WRITE;
-/*!40000 ALTER TABLE `calendar` DISABLE KEYS */;
-INSERT INTO `calendar` VALUES (1,'{\"en\": \"2022-2023 Course Selection\", \"tr\": \"2022-2023 Ders Seçimi\"}','{\"en\": \"<p>To Do #1</p>\", \"tr\": \"<p>Yapılacaklar #1</p>\"}','2022-12-20 12:00:00','{\"en\": \"Sumer Campus\", \"tr\": \"Sümer Kampüsü\"}','{\"en\": null}',NULL,1,'2022-12-18 09:31:51','2022-12-19 10:51:50'),(2,'{\"en\": \"Calendar Example\", \"tr\": \"Takvim Örneği\"}','{\"en\": \"<p>To Do #2</p>\", \"tr\": \"<p>Yapılacaklar #2</p>\"}','2022-12-19 18:00:00','{\"en\": \"Online\", \"tr\": \"Online\"}','{\"tr\": null}',NULL,1,'2022-12-19 10:36:28','2022-12-19 10:52:27'),(3,'{\"en\": \"Calendar Example\", \"tr\": \"Takvim Örneği\"}','{\"en\": \"<p>To Do #3</p>\", \"tr\": \"<p>Yapılacaklar #3</p>\"}','2022-12-19 11:00:00','{\"en\": \"Sumer Campus\", \"tr\": \"Sümer Kampüsü\"}','{\"tr\": null}',NULL,1,'2022-12-19 10:37:16','2022-12-19 10:52:41');
-/*!40000 ALTER TABLE `calendar` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `communicate`

@@ -6,7 +6,6 @@ namespace App\Http\Controllers;
 use App\Models\AcademicsAdministration;
 use App\Models\Announcement;
 use App\Models\CafeteriaMenu;
-use App\Models\Calendar;
 use App\Models\Communicate;
 use App\Models\ManageCourse;
 use App\Models\Poll;
@@ -32,7 +31,6 @@ class HomeController extends Controller
     {
 
         $dataAnnouncements = $this->getAnnouncements();
-        $dataCalendar = $this->getCalendar();
         $dataPoll = $this->getPoll();
         $dataAandA = $this->getAcademicsAdministration();
         $dataCommunicate = $this->getCommunicate();
@@ -47,7 +45,6 @@ class HomeController extends Controller
 
         return view('index', [
             'dataAnnouncements' => $dataAnnouncements,
-            'dataCalendar' => $dataCalendar,
             'dataPoll' => $dataPoll,
             'dataAandA' => $dataAandA,
             'dataCommunicate' => $dataCommunicate,
@@ -85,21 +82,7 @@ class HomeController extends Controller
     }
 
 
-    function getCalendar()
-    {
-        $query = Calendar::where('enabled', true);
-
-        if (!$this->isAdmin()) {
-            $query->where('published_at', '<=', Carbon::now());
-        }
-
-        $query->orderBy('id', 'DESC');
-
-        return $query->get();
-
-
-
-    }
+   
 
     function getPoll()
     {

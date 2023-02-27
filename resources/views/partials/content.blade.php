@@ -10,10 +10,10 @@
 
                     <h4> {{ trans('public.home.announcements') }} </h4>
                     <div class="row justify-content-around">
-                        <div class="card list-group-flush scroll-in col">
+                        <div class="card scroll-in col">
                             @if(count($dataAnnouncements) != 0)
                             @for($i=0; $i < count($dataAnnouncements); $i++)
-                                <a href="{{ $dataAnnouncements[$i]->link }}" class="list-group-item  d-flex gap-3 py-3" aria-current="true">
+                                <a href="{{ $dataAnnouncements[$i]->link }}" class="  d-flex gap-3 py-3" aria-current="true">
                                 <div class="d-flex gap-2 w-100 justify-content-between">
                                     <div class="temp3-align">
                                     <p class="mb-0 opacity-75">{!! $dataAnnouncements[$i]->description !!}</p>
@@ -84,10 +84,10 @@
 
             <div class="container">
                  <h4> {{ trans('public.home.announcements') }} </h4>
-                    <div class="card list-group-flush scroll-in col">
+                    <div class="card  scroll-in col">
                       @if(count($dataAnnouncements) != 0)
                         @for($i=0; $i < count($dataAnnouncements); $i++)
-                            <a href="{{ $dataAnnouncements[$i]->link }}" class="list-group-item  d-flex gap-3 py-3" aria-current="true">
+                            <a href="{{ $dataAnnouncements[$i]->link }}" class="d-flex gap-3 py-3" aria-current="true">
                             <div class="d-flex gap-2 w-100 justify-content-between">
                                 <div class="temp3-align">
                                 <p class="mb-0 opacity-75">{!! $dataAnnouncements[$i]->description !!}</p>

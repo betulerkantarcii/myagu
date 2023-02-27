@@ -31,22 +31,7 @@ $factory->define(App\Models\Announcement::class, static function (Faker\Generato
         
     ];
 });
-/** @var  \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(App\Models\Calendar::class, static function (Faker\Generator $faker) {
-    return [
-        'event_time' => $faker->dateTime,
-        'published_at' => $faker->date(),
-        'enabled' => $faker->boolean(),
-        'created_at' => $faker->dateTime,
-        'updated_at' => $faker->dateTime,
-        
-        'title' => ['en' => $faker->sentence],
-        'description' => ['en' => $faker->sentence],
-        'event_location' => ['en' => $faker->sentence],
-        'link' => ['en' => $faker->sentence],
-        
-    ];
-});
+
 /** @var  \Illuminate\Database\Eloquent\Factory $factory */
 $factory->define(App\Models\Poll::class, static function (Faker\Generator $faker) {
     return [

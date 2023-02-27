@@ -52,9 +52,6 @@
 
                                         <th is='sortable' :column="'id'">{{ trans('admin.poll.columns.id') }}</th>
                                         <th is='sortable' :column="'title'">{{ trans('admin.poll.columns.title') }}</th>
-                                        <th is='sortable' :column="'description'">{{ trans('admin.poll.columns.description') }}</th>
-                                        <th is='sortable' :column="'link'">{{ trans('admin.poll.columns.link') }}</th>
-                                        <th is='sortable' class="text-center" :column="'published_at'">{{ trans('admin.poll.columns.published_at') }}</th>
                                         <th is='sortable' :column="'enabled'">{{ trans('admin.poll.columns.enabled') }}</th>
 
                                         <th></th>
@@ -81,31 +78,7 @@
 
                                     <td>@{{ item.id }}</td>
                                         <td>@{{ item.title }}</td>
-                                        <td>@{{ item.description }}</td>
-                                        <td>@{{ item.link }}</td>
-                                            <td class="text-center text-nowrap">
-                                            <span v-if="item.published_at <= now">
-                                                @{{ item.published_at | datetime('DD.MM.YYYY, HH:mm') }}
-                                            </span>
-                                                <span v-if="item.published_at > now">
-                                                <small>{{ trans('admin.poll.actions.will_be_published') }}</small><br />
-                                                @{{ item.published_at | datetime('DD.MM.YYYY, HH:mm') }}
-                                                <span class="cursor-pointer" @click="publishLater(item.resource_url, collection[index], 'publishLaterDialog')" title="{{ trans('brackets/admin-ui::admin.operation.publish_later') }}" role="button"><i class="fa fa-calendar"></i></span>
-                                            </span>
-                                            <div v-if="!item.published_at">
-                                                <span class="btn btn-sm btn-info text-white mb-1" @click="publishLater(item.resource_url, collection[index], 'publishLaterDialog')" title="{{ trans('brackets/admin-ui::admin.operation.publish_later') }}" role="button"><i class="fa fa-calendar"></i>&nbsp;&nbsp;{{ trans('brackets/admin-ui::admin.operation.publish_later') }}</span>
-                                            </div>
-                                            <div v-if="!item.published_at || item.published_at > now">
-                                                <form class="d-inline" @submit.prevent="publishNow(item.resource_url, collection[index], 'publishNowDialog')">
-                                                    <button type="submit" class="btn btn-sm btn-success text-white" title="{{ trans('brackets/admin-ui::admin.operation.publish_now') }}"><i class="fa fa-send"></i>&nbsp;&nbsp;{{ trans('brackets/admin-ui::admin.operation.publish_now') }}</button>
-                                                </form>
-                                            </div>
-                                            <div v-if="item.published_at && item.published_at < now">
-                                                <form class="d-inline" @submit.prevent="unpublishNow(item.resource_url, collection[index])">
-                                                    <button type="submit" class="btn btn-sm btn-danger" title="{{ trans('brackets/admin-ui::admin.operation.unpublish_now') }}"><i class="fa fa-send"></i>&nbsp;&nbsp;{{ trans('brackets/admin-ui::admin.operation.unpublish_now') }}</button>
-                                                </form>
-                                            </div>
-                                        </td>
+                                       
                                         
                                         <td>
                                             <label class="switch switch-3d switch-success">

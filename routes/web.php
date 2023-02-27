@@ -58,20 +58,7 @@ Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->gro
     });
 });
 
-/* Auto-generated admin routes */
-Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->group(static function () {
-    Route::prefix('admin')->namespace('App\Http\Controllers\Admin')->name('admin/')->group(static function() {
-        Route::prefix('calendars')->name('calendars/')->group(static function() {
-            Route::get('/',                                             'CalendarController@index')->name('index');
-            Route::get('/create',                                       'CalendarController@create')->name('create');
-            Route::post('/',                                            'CalendarController@store')->name('store');
-            Route::get('/{calendar}/edit',                              'CalendarController@edit')->name('edit');
-            Route::post('/bulk-destroy',                                'CalendarController@bulkDestroy')->name('bulk-destroy');
-            Route::post('/{calendar}',                                  'CalendarController@update')->name('update');
-            Route::delete('/{calendar}',                                'CalendarController@destroy')->name('destroy');
-        });
-    });
-});
+
 
 /* Auto-generated admin routes */
 Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->group(static function () {
