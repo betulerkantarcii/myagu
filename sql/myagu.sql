@@ -149,7 +149,7 @@ CREATE TABLE `admin_users` (
 
 LOCK TABLES `admin_users` WRITE;
 /*!40000 ALTER TABLE `admin_users` DISABLE KEYS */;
-INSERT INTO `admin_users` VALUES (1,'Administrator','Administrator','cms.admin@agu.edu.tr','$2a$12$GgJA8Ictjv0UBpURTIOxl.YQbMEr2rMf84wmqOmqF19Q4Nd.XN3C.','r6VuC52SfzvZGvk7iMtKLdycN2g4D32UFZhpchdRu3OsCHt5GLj8R5EGWWJd',1,0,'en',NULL,'2022-12-12 08:29:46','2022-12-17 10:42:33','2022-12-17 10:42:33');
+INSERT INTO `admin_users` VALUES (1,'Administrator','Administrator','cms.admin@agu.edu.tr','$2a$12$GgJA8Ictjv0UBpURTIOxl.YQbMEr2rMf84wmqOmqF19Q4Nd.XN3C.','r6VuC52SfzvZGvk7iMtKLdycN2g4D32UFZhpchdRu3OsCHt5GLj8R5EGWWJd',1,0,'en',NULL,'2022-12-12 08:29:46','2023-02-19 14:11:50','2023-02-19 14:11:50');
 /*!40000 ALTER TABLE `admin_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -170,7 +170,7 @@ CREATE TABLE `announcements` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -179,7 +179,7 @@ CREATE TABLE `announcements` (
 
 LOCK TABLES `announcements` WRITE;
 /*!40000 ALTER TABLE `announcements` DISABLE KEYS */;
-INSERT INTO `announcements` VALUES (1,'{\"en\": \"Housing Applications\", \"tr\": \"Aday Memur\"}','{\"en\": \"<p><strong>Housing Application</strong><br></p>\", \"tr\": \"<p>Aday Memur Temel Eğitim Sınav Sonuçları için tıklayınız</p>\"}','{\"en\": \"http://www.agu.edu.tr/announcements/6693/\", \"tr\": \"https://personel-tr.agu.edu.tr/uploads/2022%20Aday%20Memur/Aday%20Memur%20Hazırlayıcı%20Eğitim%20Başarı%20Listesi%20%281%29.pdf\"}',NULL,1,'2022-12-16 09:43:49','2022-12-19 11:17:58'),(2,'{\"en\": \"2021-2022 Academic Year Summer School Course Selections and Fees\", \"tr\": \"2021-2022 Eğitim-Öğretim Yılı Yaz Okulu Ders Seçimleri ve Ücretleri\"}','{\"en\": \"<p>2021-2022 Academic Year Summer School Course Selections and Fees<br></p>\", \"tr\": \"<p>2021-2022 Eğitim-Öğretim Yılı Yaz Okulu Ders Seçimleri ve Ücretleri<br></p>\"}','{\"en\": \"http://www.agu.edu.tr/duyurular/6601/\", \"tr\": \"http://www.agu.edu.tr/duyurular/6600/\"}',NULL,1,'2022-12-19 10:22:31','2022-12-19 10:24:20'),(3,'{\"en\": \"announcement_name\", \"tr\": \"announcement_name\"}','{\"en\": \"<p>Some placeholder content in a paragraph.Some placeholder content in a paragraph that goes a little longer so it wraps to a new line.<br></p>\", \"tr\": \"<p>Some placeholder content in a paragraph.Some placeholder content in a paragraph that goes a little longer so it wraps to a new line.<br></p>\"}','{\"tr\": null}',NULL,1,'2022-12-19 11:07:48','2022-12-19 11:07:48');
+INSERT INTO `announcements` VALUES (1,'{\"en\": \"Housing Applications\", \"tr\": \"Aday Memur\"}','{\"en\": \"<p><strong>Housing Application</strong><br></p>\", \"tr\": \"<p>Aday Memur Temel Eğitim Sınav Sonuçları için tıklayınız</p>\"}','{\"en\": \"http://www.agu.edu.tr/announcements/6693/\", \"tr\": \"https://personel-tr.agu.edu.tr/uploads/2022%20Aday%20Memur/Aday%20Memur%20Hazırlayıcı%20Eğitim%20Başarı%20Listesi%20%281%29.pdf\"}',NULL,1,'2022-12-16 09:43:49','2022-12-19 11:17:58'),(2,'{\"en\": \"2021-2022 Academic Year Summer School Course Selections and Fees\", \"tr\": \"2021-2022 Eğitim-Öğretim Yılı Yaz Okulu Ders Seçimleri ve Ücretleri\"}','{\"en\": \"<p>2021-2022 Academic Year Summer School Course Selections and Fees<br></p>\", \"tr\": \"<p>2021-2022 Eğitim-Öğretim Yılı Yaz Okulu Ders Seçimleri ve Ücretleri<br></p>\"}','{\"en\": \"http://www.agu.edu.tr/duyurular/6601/\", \"tr\": \"http://www.agu.edu.tr/duyurular/6600/\"}',NULL,1,'2022-12-19 10:22:31','2022-12-19 10:24:20'),(4,'{\"en\": \"Accessible Campus And Implementations Meeting\", \"tr\": null}','{\"en\": \"<p>Accessible Campus And Implementations Meeting<br></p>\", \"tr\": null}','{\"tr\": null}',NULL,1,'2023-02-19 14:54:26','2023-02-21 06:52:05');
 /*!40000 ALTER TABLE `announcements` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -207,11 +207,9 @@ CREATE TABLE `cafeteria_menu` (
 
 LOCK TABLES `cafeteria_menu` WRITE;
 /*!40000 ALTER TABLE `cafeteria_menu` DISABLE KEYS */;
-INSERT INTO `cafeteria_menu` VALUES (4,'{\"en\": \"xyz\"}',NULL,1,'2022-12-17 11:37:56','2022-12-17 13:22:41');
+INSERT INTO `cafeteria_menu` VALUES (4,'{\"en\": \"Cafeteria Menu\"}',NULL,1,'2022-12-17 11:37:56','2023-02-27 08:14:29');
 /*!40000 ALTER TABLE `cafeteria_menu` ENABLE KEYS */;
 UNLOCK TABLES;
-
-
 
 --
 -- Table structure for table `communicate`
@@ -324,7 +322,7 @@ CREATE TABLE `media` (
   UNIQUE KEY `media_uuid_unique` (`uuid`),
   KEY `media_model_type_model_id_index` (`model_type`,`model_id`),
   KEY `media_order_column_index` (`order_column`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -333,7 +331,7 @@ CREATE TABLE `media` (
 
 LOCK TABLES `media` WRITE;
 /*!40000 ALTER TABLE `media` DISABLE KEYS */;
-INSERT INTO `media` VALUES (1,'Brackets\\AdminAuth\\Models\\AdminUser',1,'0d0942e3-60ca-4456-bfd4-29f0db6933b0','avatar','avatar','avatar.png','image/png','media','media',23924,'[]','[]','{\"thumb_75\": true, \"thumb_150\": true, \"thumb_200\": true}','[]',1,'2022-12-12 08:29:46','2022-12-12 08:29:47'),(5,'App\\Models\\CafeteriaMenu',4,'e71882c8-06ea-4407-aa03-d271287223e5','file','oUY4gQ82Oh66DsHjDqgAOB3kJptgDJywWZVjUIvl','oUY4gQ82Oh66DsHjDqgAOB3kJptgDJywWZVjUIvl.pdf','application/pdf','media','media',188098,'[]','{\"name\": \"hw_5.pdf\", \"file_name\": \"hw_5.pdf\"}','[]','[]',2,'2022-12-17 11:37:56','2022-12-17 11:37:56');
+INSERT INTO `media` VALUES (1,'Brackets\\AdminAuth\\Models\\AdminUser',1,'0d0942e3-60ca-4456-bfd4-29f0db6933b0','avatar','avatar','avatar.png','image/png','media','media',23924,'[]','[]','{\"thumb_75\": true, \"thumb_150\": true, \"thumb_200\": true}','[]',1,'2022-12-12 08:29:46','2022-12-12 08:29:47'),(7,'App\\Models\\CafeteriaMenu',4,'041e6f04-6c6b-450c-b1ac-d947adb1e406','file','WnoQPyfTXgTX7ZCziwzjE1x7J48TDfAMUhxhtSfL','WnoQPyfTXgTX7ZCziwzjE1x7J48TDfAMUhxhtSfL.pdf','application/pdf','media','media',42541,'[]','{\"name\": \"ŞUBAT AYI YEMEK MENÜSÜ.pdf\", \"file_name\": \"ŞUBAT AYI YEMEK MENÜSÜ.pdf\"}','[]','[]',2,'2023-02-21 07:00:56','2023-02-21 07:00:56');
 /*!40000 ALTER TABLE `media` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -524,7 +522,7 @@ CREATE TABLE `poll` (
 
 LOCK TABLES `poll` WRITE;
 /*!40000 ALTER TABLE `poll` DISABLE KEYS */;
-INSERT INTO `poll` VALUES (1,'{\"en\": \"Poll #1\"}','{\"en\": \"<p>xyz</p>\"}','{\"en\": null}',NULL,1,'2022-12-18 07:40:42','2022-12-18 07:49:20');
+INSERT INTO `poll` VALUES (1,'{\"en\": \"Poll #1\"}','{\"en\": \"<p>This is Poll #1</p>\"}','{\"en\": null}',NULL,1,'2022-12-18 07:40:42','2023-02-27 08:14:56');
 /*!40000 ALTER TABLE `poll` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -708,4 +706,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-19 17:34:26
+-- Dump completed on 2023-02-27 15:37:04
