@@ -158,7 +158,7 @@
                 <div class="col mb">
                     <h4 class="text-center" style="padding-top: 20px;"> {{ trans('public.home.communicate') }} </h4>
                     @for($i=0; $i < count($dataCommunicate); $i++)
-                    <a href="$dataCommunicate[$i]->link" class="bgc-m list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" >
+                    <a href="{{ $dataCommunicate[$i]->link }}" class="bgc-m list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" >
                         <div class="d-flex gap-2 w-100 justify-content-between">
                             <div class="temp3-align">
                             <h2 class="mb-0 opacity-75">{{ $dataCommunicate[$i]->title }}</h2>
@@ -173,7 +173,7 @@
                     <div class="col mb">
                     <h4 class="text-center" style="padding-top: 20px;"> {{ trans('public.home.ManageCourses') }} </h4>
                     @for($i=0; $i < count($dataCourses); $i++)
-                    <a href="$dataCourses[$i]->link" class="bgc-t list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <a href="{{ $dataCourses[$i]->link }}" class="bgc-t list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                         <div class="d-flex gap-2 w-100 justify-content-between">
                             <div class="temp3-align">
                             <h2 class="mb-0 opacity-75">{{ $dataCourses[$i]->title }}</h2>
@@ -188,7 +188,7 @@
                     <div class="col mb">
                     <h4 class="text-center" style="padding-top: 20px;"> {{ trans('public.home.solve') }} </h4>
                     @for($i=0; $i < count($dataSolve); $i++)
-                    <a href="$dataSolve[$i]->link" class="bgc-p list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <a href="{{ $dataSolve[$i]->link }}" class="bgc-p list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                         <div class="d-flex gap-2 w-100 justify-content-between">
                             <div class="temp3-align">
                             <h2 class="mb-0 opacity-75">{{ $dataSolve[$i]->title }}</h2>
@@ -205,18 +205,18 @@
                 @if(count($dataAandA) > 6)
                     <ul class="list-group" style="padding-bottom:20px">
                         @for($i=0; $i < 3; $i++)
-                        <a href="$dataAandA[$i]->link" class="bgc-s list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">{{ $dataAandA[$i]->title }}</a>
+                        <a href="{{ $dataAandA[$i]->link }}" class="bgc-s list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">{{ $dataAandA[$i]->title }}</a>
                         @endfor
                     </ul>
 
                         <ul class="list-group" style="padding-bottom:20px">
                         @for($i=3; $i < 6; $i++)
-                        <a href="$dataAandA[$i]->link" class="bgc-s list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">{{ $dataAandA[$i]->title }}</a>
+                        <a href="{{ $dataAandA[$i]->link }}" class="bgc-s list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">{{ $dataAandA[$i]->title }}</a>
                         @endfor
                     </ul>
 
                     @for($i=6; $i < count($dataAandA); $i++)
-                        <a href="$dataAandA[$i]->link" class="bgc-s list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                        <a href="{{ $dataAandA[$i]->link }}" class="bgc-s list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                         <div class="d-flex gap-2 w-100 justify-content-between">
                             <div class="temp3-align">
                             <h2 class="mb-0 opacity-75">{{ $dataAandA[$i]->title }}</h2>
@@ -226,7 +226,7 @@
                     @endfor
                 @else
                     @for($i=0; $i < count($dataAandA); $i++)
-                        <a href="$dataAandA[$i]->link" class="bgc-s list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                        <a href="{{ $dataAandA[$i]->link }}" class="bgc-s list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                         <div class="d-flex gap-2 w-100 justify-content-between">
                             <div class="temp3-align">
                             <h2 class="mb-0 opacity-75">{{ $dataAandA[$i]->title }}</h2>
